@@ -1,0 +1,91 @@
+﻿@model List<DoAnHMS.Controllers.ThongKeController.ChartData>
+
+
+@{
+    ViewBag.Title = "Biểu đồ dịch vụ";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<style>
+    .hide {
+        display: none;
+    }
+</style>
+
+<h3>Biểu đồ dịch vụ của các phòng</h3>
+<div class="hide">
+    @foreach (var item in Model)
+    {
+        <span class="lb">@item.maP</span>
+        <span class="lb1">@item.price</span>
+    }
+</div>
+<a href="@Url.Action("ExportToCsv", "ThongKe")">Lưu file csv</a>
+<canvas id="myChart" width="400" height="400"></canvas>
+<script>
+    // Get the canvas element
+    var ctx = document.getElementById('myChart').getContext('2d');
+
+    var it = document.getElementsByClassName("lb")
+    var it1 = document.getElementsByClassName("lb1")
+    var lb = []
+    var dt = []
+
+    for (const value of it) {
+        lb.push(value.innerHTML)
+    }
+
+    for (const value of it1) {
+        dt.push(parseFloat(value.innerHTML))
+    }
+
+    var bg = [
+        'rgba(255, 99, 132, 0.2)',
+        'rgba(54, 162, 235, 0.2)',
+        'rgba(255, 206, 86, 0.2)'
+    ]
+
+    var bd = [
+        'rgba(255, 99, 132, 1)',
+        'rgba(54, 162, 235, 1)',
+        'rgba(255, 206, 86, 1)'
+    ]
+
+    var mybg = []
+    var mybd = []
+    for (var i = 0; i < it.length; i++) {
+        mybg.push(bg[i % bg.length])
+        mybd.push(bd[i % bd.length])
+    }
+
+    
+
+    // Define your data
+    var data = {
+        labels: lb,
+        datasets: [{
+            label: 'Tổng doanh thu từng phòng',
+            data: dt,
+            backgroundColor: mybg,
+            borderColor: mybd,
+            borderWidth: 1
+        }]
+    };
+
+    // Define chart options
+    var options = {
+        scales: {
+            y: {
+                beginAtZero: true
+            }
+        }
+    };
+
+    // Create the chart
+    var myChart = new Chart(ctx, {
+        type: 'bar',
+        data: data,
+        options: options
+    });
+</script>
+

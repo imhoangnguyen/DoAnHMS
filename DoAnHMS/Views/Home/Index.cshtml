@@ -1,0 +1,526 @@
+﻿@model DoAnHMS.Controllers.HomeController.ChartDashBoard
+@{
+    ViewBag.Title = "Trang chủ";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+<style>
+    a.card {
+        text-decoration: none;
+    }
+
+        a.card:hover {
+            background-color: aliceblue;
+        }
+
+    .notification {
+        position: relative;
+    }
+
+    .txt {
+        color: white;
+        background-color: red;
+        font-size: small;
+        position: absolute;
+        padding: 2px;
+        top: 5px;
+        right: 5px;
+        border-radius: 100%;
+    }
+</style>
+<p>KHÁCH SẠN</p>
+<hr>
+
+<div class="row">
+    <div class="col-xl-3 col-md-6 mb-4">
+        <canvas id="myChart1" width="400" height="400"></canvas>
+    </div>
+    <div class="col-xl-3 col-md-6 mb-4">
+        <canvas id="myChart2" width="400" height="400"></canvas>
+    </div>
+    <div class="col-xl-3 col-md-6 mb-4">
+        <canvas id="myChart3" width="400" height="400"></canvas>
+    </div>
+    <div class="col-xl-3 col-md-6 mb-4">
+        <canvas id="myChart4" width="400" height="400"></canvas>
+    </div>
+    <div class="col-xl-3 col-md-6 mb-4">
+        <canvas id="myChart5" width="400" height="400"></canvas>
+    </div>
+</div>
+
+<style>
+    .hide {
+        display: none;
+    }
+</style>
+
+<div class="hide">
+
+    @foreach (var item in Model.data1)
+    {
+        <span class="lb1">
+            @item.label
+        </span>
+    }
+
+
+    @foreach (var item in Model.data1)
+    {
+        <span class="val1">
+            @item.value
+        </span>
+    }
+
+
+    @foreach (var item in Model.data2)
+    {
+        <span class="lb2">
+            @item.label
+        </span>
+    }
+
+
+    @foreach (var item in Model.data2)
+    {
+        <span class="val2">
+            @item.value
+        </span>
+    }
+
+
+
+    @foreach (var item in Model.data3)
+    {
+        <span class="lb3">
+            @item.label
+        </span>
+    }
+
+
+    @foreach (var item in Model.data3)
+    {
+        <span class="val3">
+            @item.value
+        </span>
+    }
+
+
+
+
+    @foreach (var item in Model.data4)
+    {
+        <span class="lb4">
+            @item.label
+        </span>
+    }
+
+
+    @foreach (var item in Model.data4)
+    {
+        <span class="val4">
+            @item.value
+        </span>
+    }
+
+
+
+    @foreach (var item in Model.data5)
+    {
+        <span class="lb5">
+            @item.label
+        </span>
+    }
+
+
+    @foreach (var item in Model.data5)
+    {
+        <span class="val5">
+            @item.value
+        </span>
+    }
+</div>
+
+<script>
+    let ctx = [];
+    for (var i = 1; i <= 5; i++) {
+        var ctx1 = document.getElementById(`myChart${i}`).getContext('2d');
+        ctx.push(ctx1)
+    }
+
+    function get(id) {
+        var _lb1 = document.getElementsByClassName(`lb${id}`)
+        var lb1 = []
+        for (var item of _lb1) {
+            lb1.push(item.innerHTML)
+        }
+
+        var _val1 = document.getElementsByClassName(`val${id}`)
+        var val1 = []
+        for (var item of _val1) {
+            val1.push(parseFloat(item.innerHTML))
+        }
+
+        return {
+            lb: lb1,
+            val: val1
+        }
+    }
+
+    var c1 = get(1)
+                
+
+    var chart1 = new Chart(ctx[0], {
+
+        type: 'line',
+        data: {
+
+            labels: c1.lb,
+            datasets: [{
+                label: 'Doanh thu theo tháng',
+                data: c1.val,
+                borderColor: 'rgba(75, 192, 192, 1)',
+                borderWidth: 1
+            }]
+        }
+    });
+
+    
+    var c2 = get(2)
+    new Chart(ctx[1], {
+
+        type: 'bar',
+        data: {
+
+            labels: c2.lb,
+            datasets: [{
+                label: 'Doanh thu theo năm',
+                data: c2.val,
+                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                borderColor: 'rgba(75, 192, 192, 1)',
+                borderWidth: 1
+            }]
+        }
+    });
+
+
+    var colorNames = [
+        "aliceblue", "antiquewhite", "aqua", "aquamarine", "azure",
+        "beige", "bisque", "black", "blanchedalmond", "blue",
+        "blueviolet", "brown", "burlywood", "cadetblue", "chartreuse",
+        "chocolate", "coral", "cornflowerblue", "cornsilk", "crimson",
+        "cyan", "darkblue", "darkcyan", "darkgoldenrod", "darkgray",
+        "darkgreen", "darkkhaki", "darkmagenta", "darkolivegreen", "darkorange",
+        "darkorchid", "darkred", "darksalmon", "darkseagreen", "darkslateblue",
+        "darkslategray", "darkturquoise", "darkviolet", "deeppink", "deepskyblue",
+        "dimgray", "dodgerblue", "firebrick", "floralwhite", "forestgreen",
+        "fuchsia", "gainsboro", "ghostwhite", "gold", "goldenrod",
+        "gray", "green", "greenyellow", "honeydew", "hotpink",
+        "indianred", "indigo", "ivory", "khaki", "lavender",
+        "lavenderblush", "lawngreen", "lemonchiffon", "lightblue", "lightcoral",
+        "lightcyan", "lightgoldenrodyellow", "lightgray", "lightgreen", "lightpink",
+        "lightsalmon", "lightseagreen", "lightskyblue", "lightslategray", "lightsteelblue",
+        "lightyellow", "lime", "limegreen", "linen", "magenta",
+        "maroon", "mediumaquamarine", "mediumblue", "mediumorchid", "mediumpurple",
+        "mediumseagreen", "mediumslateblue", "mediumspringgreen", "mediumturquoise", "mediumvioletred",
+        "midnightblue", "mintcream", "mistyrose", "moccasin", "navajowhite",
+        "navy", "oldlace", "olive", "olivedrab", "orange",
+        "orangered", "orchid", "palegoldenrod", "palegreen", "paleturquoise",
+        "palevioletred", "papayawhip", "peachpuff", "peru", "pink",
+        "plum", "powderblue", "purple", "red", "rosybrown",
+        "royalblue", "saddlebrown", "salmon", "sandybrown", "seagreen",
+        "seashell", "sienna", "silver", "skyblue", "slateblue",
+        "slategray", "snow", "springgreen", "steelblue", "tan",
+        "teal", "thistle", "tomato", "transparent", "turquoise",
+        "violet", "wheat", "white", "whitesmoke", "yellow",
+        "yellowgreen"
+    ];
+
+    
+
+
+
+    var _bg = []
+    var c3 = get(3)
+    for (var i = 0; i < c3.lb.length; i++) {
+        _bg.push(colorNames[i % colorNames.length])
+    }
+
+    
+    new Chart(ctx[2], {
+        type: 'pie',
+        data: {
+            labels: c3.lb,
+            datasets: [{
+                data: c3.val,
+                backgroundColor: _bg
+            }]
+        }
+    });
+
+
+    
+    var _bg1 = []
+    var c4 = get(4)
+    for (var i = 0; i < c3.lb.length; i++) {
+        _bg1.push(colorNames[i % colorNames.length])
+    }
+
+    new Chart(ctx[3], {
+
+        type: 'doughnut',
+        data: {
+
+            labels: c4.lb,
+            datasets: [{
+                data: c4.val,
+                backgroundColor: _bg1
+            }]
+        }
+    });
+    var c5 = get(5)
+    new Chart(ctx[4], {
+
+        type: 'radar',
+        data: {
+
+            labels: c5.lb,
+            datasets: [{
+                label: 'Radar Chart Example',
+                data: c5.val,
+                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                borderColor: 'rgba(75, 192, 192, 1)',
+                borderWidth: 1
+            }]
+        }
+    });
+
+
+
+
+</script>
+
+<div class="row">
+    <div class="col-xl-3 col-md-6 mb-4">
+        <a class="card border-left-primary shadow h-100 py-2 stretched-link" href="@Url.Action("Index", "Phongs")">
+            <div class="card-body">
+                <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                        <div class="h5 mb-0 font-weight-bold text-primary text-uppercase">PHÒNG</div>
+                    </div>
+                    <div class="col-auto">
+                        <i class="fa fa-building fa-2x text-gray-300"></i>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <div class="col-xl-3 col-md-6 mb-4">
+        <a class="card border-left-success shadow h-100 py-2 stretched-link" href="@Url.Action("Index", "LoaiPhongs")">
+            <div class="card-body">
+                <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                        <div class="h5 mb-0 font-weight-bold text-success text-uppercase">Loại Phòng</div>
+                    </div>
+                    <div class="col-auto">
+                        <i class="fa fa-bars fa-2x text-gray-300"></i>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <div class="col-xl-3 col-md-6 mb-4">
+        <a class="card border-left-info shadow h-100 py-2 stretched-link" href="@Url.Action("Index", "DichVus")">
+            <div class="card-body">
+                <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                        <div class="h5 mb-0 font-weight-bold text-info text-uppercase">Dịch vụ</div>
+                    </div>
+                    <div class="col-auto">
+                        <i class="fa fa-star fa-2x text-gray-300"></i>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+</div>
+<br />
+<p>ĐẶT & THUÊ PHÒNG</p>
+<hr>
+<div class="row">
+    <div class="col-xl-3 col-md-6 mb-4">
+        <a class="card border-left-secondary shadow h-100 py-2 stretched-link notification" href="@Url.Action("Index", "PhieuDatPhongs")">
+            <div class="card-body">
+                <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                        <div class="mb-0 font-weight-bold text-secondary text-uppercase">Phiếu đặt phòng</div>
+                    </div>
+                    <div class="col-auto">
+                        <i class="fa fa-flag fa-2x text-gray-300"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="txt">@ViewBag.PDP</div>
+        </a>
+    </div>
+
+    <div class="col-xl-3 col-md-6 mb-4">
+        <a class="card border-left-danger shadow h-100 py-2 stretched-link" href="@Url.Action("Index", "PhieuThuePhongs")">
+            <div class="card-body">
+                <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                        <div class="mb-0 font-weight-bold text-danger text-uppercase">Phiếu thuê phòng</div>
+                    </div>
+                    <div class="col-auto">
+                        <i class="fa fa-sticky-note fa-2x text-gray-300"></i>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <div class="col-xl-3 col-md-6 mb-4">
+        <a class="card border-left-dark shadow h-100 py-2 stretched-link" href="@Url.Action("Index", "KiemTraPhongTrong")">
+            <div class="card-body">
+                <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                        <div class="mb-0 font-weight-bold text-dark text-uppercase">KIỂM TRA PHÒNG TRỐNG</div>
+                    </div>
+                    <div class="col-auto">
+                        <i class="fas fa-calendar-check fa-2x text-gray-300"></i>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <div class="col-xl-3 col-md-6 mb-4">
+        <a class="card border-left-warning shadow h-100 py-2 stretched-link" href="@Url.Action("Index", "HoaDons")">
+            <div class="card-body">
+                <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                        <div class="h5 mb-0 font-weight-bold text-warning text-uppercase">Hóa đơn</div>
+                    </div>
+                    <div class="col-auto">
+                        <i class="fas fa-receipt fa-2x text-gray-300"></i>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+</div>
+<br />
+<p>KHÁCH HÀNG</p>
+<hr>
+<div class="row">
+    <div class="col-xl-3 col-md-6 mb-4">
+        <a class="card border-left-primary shadow h-100 py-2 stretched-link" href="@Url.Action("Index", "KhachHangs")">
+            <div class="card-body">
+                <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                        <div class="h5 mb-0 font-weight-bold text-primary text-uppercase">KHÁCH HÀNG</div>
+                    </div>
+                    <div class="col-auto">
+                        <i class="fa fa-address-book fa-2x text-gray-300"></i>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <div class="col-xl-3 col-md-6 mb-4">
+        <a class="card border-left-success shadow h-100 py-2 stretched-link notification" href="@Url.Action("Index", "LienHes")">
+            <div class="card-body">
+                <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                        <div class="h5 mb-0 font-weight-bold text-success text-uppercase">Liên Hệ</div>
+                    </div>
+                    <div class="col-auto">
+                        <i class="fa fa-phone-square fa-2x text-gray-300"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="txt">@ViewBag.LienHe</div>
+        </a>
+    </div>
+
+    <div class="col-xl-3 col-md-6 mb-4">
+        <a class="card border-left-info shadow h-100 py-2 stretched-link notification" href="@Url.Action("Index", "PhanHois")">
+            <div class="card-body">
+                <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                        <div class="h5 mb-0 font-weight-bold text-info text-uppercase">Phản hồi</div>
+                    </div>
+                    <div class="col-auto">
+                        <i class="fa fa-comments fa-2x text-gray-300"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="txt">@ViewBag.PhanHoi</div>
+        </a>
+    </div>
+</div>
+<br />
+<p>NGƯỜI DÙNG</p>
+<hr>
+<div class="row">
+    <div class="col-xl-3 col-md-6 mb-4">
+        <a class="card border-left-secondary shadow h-100 py-2 stretched-link" href="@Url.Action("Index", "NhanViens")">
+            <div class="card-body">
+                <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                        <div class="h5 mb-0 font-weight-bold text-secondary text-uppercase">Nhân viên</div>
+                    </div>
+                    <div class="col-auto">
+                        <i class="fa fa-users fa-2x text-gray-300"></i>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <div class="col-xl-3 col-md-6 mb-4">
+        <a class="card border-left-danger shadow h-100 py-2 stretched-link" href="@Url.Action("Index", "QuanTris")">
+            <div class="card-body">
+                <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                        <div class="mb-0 font-weight-bold text-danger text-uppercase">Tài khoản nhân viên</div>
+                    </div>
+                    <div class="col-auto">
+                        <i class="fa fa-user-circle fa-2x text-gray-300"></i>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <div class="col-xl-3 col-md-6 mb-4">
+        <a class="card border-left-dark shadow h-100 py-2 stretched-link" href="@Url.Action("Index", "NhomNhanViens")">
+            <div class="card-body">
+                <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                        <div class="mb-0 font-weight-bold text-dark text-uppercase">Nhóm nhân viên</div>
+                    </div>
+                    <div class="col-auto">
+                        <i class="fa fa-users fa-2x text-gray-300"></i>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="col-xl-3 col-md-6 mb-4">
+        <a class="card border-left-warning shadow h-100 py-2 stretched-link" href="@Url.Action("Index", "DanhSachQuyens")">
+            <div class="card-body">
+                <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                        <div class="h5 mb-0 font-weight-bold text-warning text-uppercase">Phân quyền</div>
+                    </div>
+                    <div class="col-auto">
+                        <i class="fa fa-puzzle-piece fa-2x text-gray-300"></i>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+</div>
