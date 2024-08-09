@@ -1,4 +1,4 @@
-﻿// T4 code generation is enabled for model 'F:\MSCC\DoAnHMS-jbvbyx\DoAnHMS\DoAnHMS(new)\DoAnHMS\Models\Model1_HMS.edmx'. 
+﻿// T4 code generation is enabled for model 'C:\Users\Admin\Documents\Cumputer old\chuyen_May\APP\DoAnHMS\DoAnHMS\Models\Model1_HMS.edmx'. 
 // To enable legacy code generation, change the value of the 'Code Generation Strategy' designer
 // property to 'Legacy ObjectContext'. This property is available in the Properties Window when the model
 // is open in the designer.

@@ -212,6 +212,7 @@
     <Compile Include="Models\NhomNhanVien.cs">
       <DependentUpon>Model1_HMS.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\Payments\BookingViewModel.cs" />
     <Compile Include="Models\Payments\VnPayLibrary.cs" />
     <Compile Include="Models\PhanHoi.cs">
       <DependentUpon>Model1_HMS.tt</DependentUpon>
@@ -1979,6 +1980,7 @@
     <Content Include="Assets\Client\images\thanks.gif" />
     <Content Include="Assets\Client\images\Tin.jpg" />
     <Content Include="Assets\Client\images\Tin1.jpg" />
+    <Content Include="Assets\Client\images\vnpay-logo-vinadesign-25-12-57-55.jpg" />
     <Content Include="Assets\Client\js\bootstrap-3.1.1.min.js" />
     <Content Include="Assets\Client\js\easing.js" />
     <Content Include="Assets\Client\js\easy-responsive-tabs.js" />

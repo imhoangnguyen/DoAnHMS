@@ -1,4 +1,5 @@
 ﻿using DoAnHMS.Models;
+using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -74,12 +75,35 @@ namespace DoAnHMS.Controllers
             var hm4 = chart4();
             var hm5 = chart5();
 
-            chartDashBoard.data1 = hm.Values.ToList().OrderBy(x => x.label).ToList();
-            chartDashBoard.data2 = hm2.Values.ToList().OrderBy(x => x.label).ToList();
+            /*chartDashBoard.data1 = hm.Values.ToList().OrderBy(x => x.label).ToList();
+            chartDashBoard.data2 = hm2.Values.ToList().OrderBy(x => x.label).ToList();*/
             chartDashBoard.data3 = hm3.Values.ToList().OrderBy(x => x.label).ToList();
             chartDashBoard.data4 = hm4.Values.ToList().OrderBy(x => x.label).ToList();
             chartDashBoard.data5 = hm5.Values.ToList().OrderBy(x => x.label).ToList();
 
+            var dataDemo1 = new List<ChartData>
+             {
+                new ChartData { label = "Loại phòng đơn", value = 50000 },
+                new ChartData { label = "Loại phòng đơn", value = 50000 },
+                new ChartData { label = "Loại phòng đơn", value = 50000 },
+                new ChartData { label = "Loại phòng đơn", value = 50000 },
+                new ChartData { label = "Loại phòng đơn", value = 50000 },
+                new ChartData { label = "Loại phòng đơn", value = 50000 },
+
+             };
+            chartDashBoard.data1 = dataDemo1;
+
+            var dataDemo2 = new List<ChartData>
+             {
+                new ChartData { label = "Loại phòng đơn", value = 50000 },
+                new ChartData { label = "Loại phòng đơn", value = 50000 },
+                new ChartData { label = "Loại phòng đơn", value = 50000 },
+                new ChartData { label = "Loại phòng đơn", value = 50000 },
+                new ChartData { label = "Loại phòng đơn", value = 50000 },
+                new ChartData { label = "Loại phòng đơn", value = 50000 },
+
+             };
+            chartDashBoard.data2 = dataDemo2;
 
 
 

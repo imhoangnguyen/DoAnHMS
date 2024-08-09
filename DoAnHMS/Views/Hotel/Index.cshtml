@@ -42,20 +42,21 @@
         </div>
         <div class="contact-bnr-w3-agile">
             <ul>
+                @*<li><a href="@Url.Action("Index","Login")">Đăng nhập</a></li>*@
                 <li><i class="fa fa-envelope" aria-hidden="true"></i>hoangabc000@gmail.com</li>
                 <li><i class="fa fa-phone" aria-hidden="true"></i>0366201726</li>
                 <!--<li class="s-bar">
-                    <div class="search">
-                        <input class="search_box" type="checkbox" id="search_box">
-                        <label class="icon-search" for="search_box"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></label>
-                        <div class="search_form">
-                            <form action="#" method="post">
-                                <input type="search" name="Search" placeholder=" " required=" " />
-                                <input type="submit" value="Search">
-                            </form>
-                        </div>
-                    </div>
-                </li>-->
+        <div class="search">
+            <input class="search_box" type="checkbox" id="search_box">
+            <label class="icon-search" for="search_box"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></label>
+            <div class="search_form">
+                <form action="#" method="post">
+                    <input type="search" name="Search" placeholder=" " required=" " />
+                    <input type="submit" value="Search">
+                </form>
+            </div>
+        </div>
+    </li>-->
             </ul>
         </div>
         <div class="clearfix"></div>
@@ -391,7 +392,7 @@
                     <div class="col-md-3 price-grid ">
                         <div class="price-block agile">
                             <div class="price-gd-top">
-                                <img src="~/Images/@item.LoaiPhong.hinhAnh" alt="" class="img-responsive" style="height:300px; width:255px" />
+                                <img src="~/Images/@item.LoaiPhong.hinhAnh" alt="" class="img-responsive figure-img img-fluid rounded" style="height:300px; width:255px" />
                                 <h4>@item.LoaiPhong.tenLP</h4>
                             </div>
                             <div class="price-gd-bottom">

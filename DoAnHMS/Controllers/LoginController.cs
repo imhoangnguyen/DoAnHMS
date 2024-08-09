@@ -15,9 +15,9 @@ namespace DoAnHMS.Controllers
         public int CheckUser(string username, string password)
         {
             var kq = db.QuanTris.Where(x => x.username == username && x.password == password).SingleOrDefault();
-            /*if (kq != null)
+            if (kq != null)
             {
-                if(kq.tinhTrang == true)
+                if (kq.tinhTrang == true)
                 {
                     return 1;
                 }
@@ -29,8 +29,8 @@ namespace DoAnHMS.Controllers
             else
             {
                 return 0;
-            }*/
-            return 1;
+            }
+            /*return 1;*/
         }
 
         public List<string> GetListCredential(string username)
