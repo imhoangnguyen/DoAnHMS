@@ -75,37 +75,66 @@ namespace DoAnHMS.Controllers
             var hm4 = chart4();
             var hm5 = chart5();
 
-            /*chartDashBoard.data1 = hm.Values.ToList().OrderBy(x => x.label).ToList();
-            chartDashBoard.data2 = hm2.Values.ToList().OrderBy(x => x.label).ToList();*/
+            chartDashBoard.data1 = hm.Values.ToList().OrderBy(x => x.label).ToList();
+            chartDashBoard.data2 = hm2.Values.ToList().OrderBy(x => x.label).ToList();
             chartDashBoard.data3 = hm3.Values.ToList().OrderBy(x => x.label).ToList();
             chartDashBoard.data4 = hm4.Values.ToList().OrderBy(x => x.label).ToList();
             chartDashBoard.data5 = hm5.Values.ToList().OrderBy(x => x.label).ToList();
 
             var dataDemo1 = new List<ChartData>
              {
-                new ChartData { label = "Loại phòng đơn", value = 50000 },
-                new ChartData { label = "Loại phòng đơn", value = 50000 },
-                new ChartData { label = "Loại phòng đơn", value = 50000 },
-                new ChartData { label = "Loại phòng đơn", value = 50000 },
-                new ChartData { label = "Loại phòng đơn", value = 50000 },
-                new ChartData { label = "Loại phòng đơn", value = 50000 },
+                new ChartData { label = "Phòng 1 giường đôi", value = 1600000 },
+                new ChartData { label = "Phòng 1 giường đơn", value = 3200000 },
+                new ChartData { label = "Phòng 3 giường đơn", value = 1000000 },
+                new ChartData { label = "Phòng 1 giường đơn và 1 giường đôi", value = 1300000 },
+                new ChartData { label = "Phòng 2 giường đơn", value = 3500000 },
 
              };
             chartDashBoard.data1 = dataDemo1;
 
             var dataDemo2 = new List<ChartData>
              {
-                new ChartData { label = "Loại phòng đơn", value = 50000 },
-                new ChartData { label = "Loại phòng đơn", value = 50000 },
-                new ChartData { label = "Loại phòng đơn", value = 50000 },
-                new ChartData { label = "Loại phòng đơn", value = 50000 },
-                new ChartData { label = "Loại phòng đơn", value = 50000 },
-                new ChartData { label = "Loại phòng đơn", value = 50000 },
+                new ChartData { label = "Phòng 1 giường đôi", value = 1600000 },
+                new ChartData { label = "Phòng 1 giường đơn", value = 3200000 },
+                new ChartData { label = "Phòng 3 giường đơn", value = 1000000 },
+                new ChartData { label = "Phòng 1 giường đơn và 1 giường đôi", value = 1300000 },
+                new ChartData { label = "Phòng 2 giường đơn", value = 3500000 },
 
              };
             chartDashBoard.data2 = dataDemo2;
 
+            var dataDemo3 = new List<ChartData>
+             {
+                new ChartData { label = "Phòng 1 giường đôi", value = 1600000 },
+                new ChartData { label = "Phòng 1 giường đơn", value = 3200000 },
+                new ChartData { label = "Phòng 3 giường đơn", value = 1000000 },
+                new ChartData { label = "Phòng 1 giường đơn và 1 giường đôi", value = 1300000 },
+                new ChartData { label = "Phòng 2 giường đơn", value = 3500000 },
 
+             };
+            chartDashBoard.data3 = dataDemo3;
+
+            var dataDemo4 = new List<ChartData>
+             {
+                new ChartData { label = "Phòng 1 giường đôi", value = 1600000 },
+                new ChartData { label = "Phòng 1 giường đơn", value = 3200000 },
+                new ChartData { label = "Phòng 3 giường đơn", value = 1000000 },
+                new ChartData { label = "Phòng 1 giường đơn và 1 giường đôi", value = 1300000 },
+                new ChartData { label = "Phòng 2 giường đơn", value = 3500000 },
+             };
+            chartDashBoard.data4 = dataDemo4;
+
+            var dataDemo5 = new List<ChartData>
+             {
+                new ChartData { label = "Điểm Tâm", value = 16000 },
+                new ChartData { label = "Cơm trưa", value = 32000 },
+                new ChartData { label = "Cocacola lon", value = 1000 },
+                new ChartData { label = "Cocacola chai", value = 13000 },
+                new ChartData { label = "Giặt Ủi", value = 50000 },
+                new ChartData { label = "Lavie", value = 40000 },
+
+             };
+            chartDashBoard.data5 = dataDemo5;
 
             return View(chartDashBoard);
         }
