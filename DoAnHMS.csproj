@@ -1945,6 +1945,11 @@
     <Content Include="Assets\Client\images\c4.jpg" />
     <Content Include="Assets\Client\images\close.png" />
     <Content Include="Assets\Client\images\contact.jpg" />
+    <Content Include="Assets\Client\images\edit_01.jpg" />
+    <Content Include="Assets\Client\images\edit_02.jpg" />
+    <Content Include="Assets\Client\images\edit_03.jpg" />
+    <Content Include="Assets\Client\images\edit_04.jpg" />
+    <Content Include="Assets\Client\images\edit_05.jpg" />
     <Content Include="Assets\Client\images\g1.jpg" />
     <Content Include="Assets\Client\images\g10.jpg" />
     <Content Include="Assets\Client\images\g2.jpg" />
@@ -1955,6 +1960,9 @@
     <Content Include="Assets\Client\images\g7.jpg" />
     <Content Include="Assets\Client\images\g8.jpg" />
     <Content Include="Assets\Client\images\g9.jpg" />
+    <Content Include="Assets\Client\images\home_stay_1.jpg" />
+    <Content Include="Assets\Client\images\home_stay_2.jpg" />
+    <Content Include="Assets\Client\images\home_stay_3.png" />
     <Content Include="Assets\Client\images\icons.svg" />
     <Content Include="Assets\Client\images\image.png" />
     <Content Include="Assets\Client\images\Nghia.jpg" />
@@ -2254,6 +2262,8 @@
     <Content Include="Models\Model1_HMS.edmx.diagram">
       <DependentUpon>Model1_HMS.edmx</DependentUpon>
     </Content>
+    <Content Include="Assets\Client\images\edit_03.webp" />
+    <Content Include="Assets\Client\images\edit_04.webp" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />

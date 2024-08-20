@@ -26,7 +26,8 @@ namespace DoAnHMS.Controllers
         // GET: PhieuDatPhong
         public ActionResult Index()
         {
-            var phieuDatPhongs = db.PhieuDatPhongs.Include(p => p.KhachHang).Include(p => p.NhanVien);
+            var phieuDatPhongs = db.PhieuDatPhongs.Include(p => p.KhachHang).Include(p => p.NhanVien)
+                .OrderByDescending(x=>x.ngayDi <= DateTime.Now);
             return View(phieuDatPhongs.ToList());
         }
 
