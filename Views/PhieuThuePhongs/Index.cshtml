@@ -2,7 +2,12 @@
 @{
     ViewBag.Title = "Danh sách phiếu thuê phòng";
     Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
-    WebGrid webGrid = new WebGrid(Model, canPage: true, defaultSort: "maPTP", rowsPerPage: 5);
+    /*WebGrid webGrid = new WebGrid(Model, canPage: true, defaultSort: "maPTP", rowsPerPage: 5);*/
+
+    WebGrid webGrid = new WebGrid(Model, canPage: true, defaultSort: "ngayThue desc", rowsPerPage: 10);
+    webGrid.SortDirection = SortDirection.Descending;
+    webGrid.SortColumn = "ngayThue";
+
 }
 
 <style type="text/css">

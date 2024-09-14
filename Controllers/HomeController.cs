@@ -103,7 +103,7 @@ namespace DoAnHMS.Controllers
              };
             chartDashBoard.data2 = dataDemo2;
 
-            var dataDemo3 = new List<ChartData>
+            /*var dataDemo3 = new List<ChartData>
              {
                 new ChartData { label = "Phòng 1 giường đôi", value = 1600000 },
                 new ChartData { label = "Phòng 1 giường đơn", value = 3200000 },
@@ -134,7 +134,7 @@ namespace DoAnHMS.Controllers
                 new ChartData { label = "Lavie", value = 40000 },
 
              };
-            chartDashBoard.data5 = dataDemo5;
+            chartDashBoard.data5 = dataDemo5;*/
 
             return View(chartDashBoard);
         }

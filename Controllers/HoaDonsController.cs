@@ -49,7 +49,7 @@ namespace DoAnHMS.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            HoaDon hoaDon = db.HoaDons.Find(id);
+            var hoaDon = db.HoaDons.FirstOrDefault(m =>m.maHD == id);
             if (hoaDon == null)
             {
                 return HttpNotFound();
@@ -177,6 +177,39 @@ namespace DoAnHMS.Controllers
             db.HoaDons.Remove(hoaDon);
             db.SaveChanges();
             return RedirectToAction("Index");
+        }
+
+        // GET: PhieuDatPhong/Edit/5
+        [HasCredential(IDQuyen = "LAPHOADON")]
+        public ActionResult Edit(string id)
+        {
+            if (id == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+            var hoaDon = db.HoaDons.FirstOrDefault(m=>m.maHD == id);
+            if (hoaDon == null)
+            {
+                return HttpNotFound();
+            }
+            return View(hoaDon);
+        }
+
+        // POST: PhieuDatPhong/Edit/5
+        // To protect from overposting attacks, enable the specific properties you want to bind to, for 
+        // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        [HasCredential(IDQuyen = "LAPHOADON")]
+        public ActionResult Edit([Bind(Include = "maHD,ngayTT,maPTP,maNV,tongTien")] HoaDon hoaDon)
+        {
+            if (ModelState.IsValid)
+            {
+                db.Entry(hoaDon).State = EntityState.Modified;
+                db.SaveChanges();
+                return RedirectToAction("Index");
+            }
+            return View(hoaDon);
         }
 
         protected override void Dispose(bool disposing)

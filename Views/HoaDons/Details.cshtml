@@ -85,9 +85,9 @@
                     }
 
                 </tr>
-                            }
+            }
 
-                        }
+        }
     </table>
     @{
         TimeSpan difference = Model.PhieuThuePhong.ngayTra - Model.PhieuThuePhong.ngayThue;
@@ -108,18 +108,18 @@
             <th>Ngày sử dụng</th>
             <th>Thành tiền</th>
         </tr>
-        @{decimal tienDV = 0; } 
+        @{decimal tienDV = 0; }
         @foreach (var item in Model.PhieuThuePhong.CTPhieuThuePhongs)
         {
-    <tr>
-        <td>@item.maP</td>
-        <td>@item.DichVu.tenDV</td>
-        <td>@item.DichVu.gia.ToString("#,##0")</td>
-        <td>@item.soLuong</td>
-        <td>@{string ngaySD = @item.ngaySD.ToString("dd/MM/yyy hh:mm");} @ngaySD</td>
-        <td>@{ decimal tt = @item.DichVu.gia * @item.soLuong; tienDV += tt;} @tt.ToString("#,##0")</td>
-    </tr>
-            }
+            <tr>
+                <td>@item.maP</td>
+                <td>@item.DichVu.tenDV</td>
+                <td>@item.DichVu.gia.ToString("#,##0")</td>
+                <td>@item.soLuong</td>
+                <td>@{string ngaySD = @item.ngaySD.ToString("dd/MM/yyy hh:mm");} @ngaySD</td>
+                <td>@{ decimal tt = @item.DichVu.gia * @item.soLuong; tienDV += tt;} @tt.ToString("#,##0")</td>
+            </tr>
+        }
     </table>
 </div>
 <hr />

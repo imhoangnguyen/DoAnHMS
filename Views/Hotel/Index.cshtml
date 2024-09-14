@@ -7,7 +7,7 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-    <title>SUNRISE HOTEL</title>
+    <title>HOANG GIA HOTELS</title>
     <!-- for-mobile-apps -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -25,9 +25,9 @@
     <link href="~/Assets/Client/css/style.css" rel="stylesheet" type="text/css" media="all" />
     <script type="text/javascript" src="~/Assets/Client/js/modernizr-2.6.2.min.js"></script>
     <!--fonts-->
-    <link href="//fonts.googleapis.com/css?family=Oswald:300,400,700" rel="stylesheet">
-    <link href="//fonts.googleapis.com/css?family=Federo" rel="stylesheet">
-    <link href="//fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Noto+Sans:400,700" rel="stylesheet">
     <!--//fonts-->
 
 </head>
@@ -65,30 +65,32 @@
     <div class="w3_navigation">
         <div class="container">
             <nav class="navbar navbar-default">
-                <div class="navbar-header navbar-left">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <h1><a class="navbar-brand" href="#">SUN <span>RISE</span><p class="logo_w3l_agile_caption"></p></a></h1>
-                </div>
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
-                    <nav class="menu menu--iris">
-                        <ul class="nav navbar-nav menu__list">
-                            <li class="menu__item menu__item--current"><a href="" class="menu__link">Trang chủ</a></li>
-                            <li class="menu__item"><a href="#about" class="menu__link scroll">Giới thiệu</a></li>
-                            <li class="menu__item"><a href="#gallery" class="menu__link scroll">Hình ảnh</a></li>
-                            <li class="menu__item"><a href="#rooms" class="menu__link scroll">Phòng</a></li>
-                            <li class="menu__item"><a href="#contact" class="menu__link scroll">Liên hệ</a></li>
-                            <li class="menu__item"><a href="@Url.Action("PhanHoi", "Hotel")" class="menu__link">Phản hồi</a></li>
-                        </ul>
-                    </nav>
+                <div class="container-fluid">
+                    <div class="navbar-header ">
+                        <a class="navbar-brand mb-0 h5" href="#" >HOANG GIA HOTELS</a>
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+
+                    </div>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+                        <nav class="menu menu--iris">
+                            <ul class="nav navbar-nav menu__list">
+                                <li class="menu__item menu__item--current"><a href="" class="menu__link">Trang chủ</a></li>
+                                <li class="menu__item"><a href="#about" class="menu__link scroll">Giới thiệu</a></li>
+                                <li class="menu__item"><a href="#rooms" class="menu__link scroll">Phòng</a></li>
+                                <li class="menu__item"><a href="#contact" class="menu__link scroll">Liên hệ</a></li>
+                                <li class="menu__item"><a href="@Url.Action("PhanHoi", "Hotel")" class="menu__link">Phản hồi</a></li>
+                                <li class="menu__item"><a href="#contact" class="menu__link scroll">Đặt phòng</a></li>
+                            </ul>
+                        </nav>
+                    </div>
                 </div>
             </nav>
-
         </div>
     </div>
     <!-- //header -->
@@ -103,11 +105,11 @@
 
                             <div class="container">
                                 <div class="agileits-banner-info">
-                                    <h4>SUN RISE</h4>
+                                    <h4>HOANG GIA HOTELS </h4>
                                     <h3>Chúng tôi biết sở thích của bạn</h3>
                                     <p>Chào mừng đến với khách sạn của chúng tôi</p>
                                     <div class="agileits_w3layouts_more menu__item">
-                                        <a href="#" class="menu__link" data-toggle="modal" data-target="#myModal">Đọc thêm</a>
+                                        @*<a href="#" class="menu__link" data-toggle="modal" data-target="#myModal">Đọc thêm</a>*@
 
                                     </div>
                                 </div>
@@ -118,11 +120,11 @@
                         <div class="w3layouts-banner-top w3layouts-banner-top1">
                             <div class="container">
                                 <div class="agileits-banner-info">
-                                    <h4>SUN RISE</h4>
+                                    <h4>HOANG GIA HOTELS</h4>
                                     <h3>Ở với bạn bè và gia đình</h3>
                                     <p>Hãy đến và tận hưởng khoảnh khắc quý giá với chúng tôi</p>
                                     <div class="agileits_w3layouts_more menu__item">
-                                        <a href="#" class="menu__link" data-toggle="modal" data-target="#myModal">Đọc thêm</a>
+                                        @*<a href="#" class="menu__link" data-toggle="modal" data-target="#myModal">Đọc thêm</a>*@
                                     </div>
                                 </div>
                             </div>
@@ -132,11 +134,11 @@
                         <div class="w3layouts-banner-top w3layouts-banner-top2">
                             <div class="container">
                                 <div class="agileits-banner-info">
-                                    <h4>SUN RISE</h4>
+                                    <h4>HOANG GIA HOTELS</h4>
                                     <h3>Bạn muốn kỳ nghỉ sang trọng?</h3>
                                     <p>Nhận chỗ ở ngay hôm nay</p>
                                     <div class="agileits_w3layouts_more menu__item">
-                                        <a href="#" class="menu__link" data-toggle="modal" data-target="#myModal">Đọc thêm</a>
+                                        @*<a href="#" class="menu__link" data-toggle="modal" data-target="#myModal">Đọc thêm</a>*@
                                     </div>
                                 </div>
                             </div>
@@ -173,9 +175,9 @@
     </div>
     <!-- //Modal1 -->
     <div id="availability-agileits">
-        <div class="col-md-12 book-form-left-w3layouts">
+        @*<div class="col-md-12 book-form-left-w3layouts">
             <a href="#contact" class="scroll"><h2>ĐẶT PHÒNG</h2></a>
-        </div>
+        </div>*@
 
         <div class="clearfix"> </div>
     </div>
@@ -191,28 +193,28 @@
                         <div class="w3_grid_effect">
                             <span class="cbp-ig-icon w3_road"></span>
                             <h4 class="cbp-ig-title">PHÒNG NGỦ CHÍNH HÃNG</h4>
-                            <span class="cbp-ig-category">SUN RISE</span>
+                            <span class="cbp-ig-category">HOANG GIA HOTELS</span>
                         </div>
                     </li>
                     <li>
                         <div class="w3_grid_effect">
                             <span class="cbp-ig-icon w3_cube"></span>
                             <h4 class="cbp-ig-title">BAN CÔNG NHÌN RA BIỂN</h4>
-                            <span class="cbp-ig-category">SUN RISE</span>
+                            <span class="cbp-ig-category">HOANG GIA HOTELS</span>
                         </div>
                     </li>
                     <li>
                         <div class="w3_grid_effect">
                             <span class="cbp-ig-icon w3_users"></span>
                             <h4 class="cbp-ig-title">QUÁN CAFE VỚI KHÔNG GIAN LỚN</h4>
-                            <span class="cbp-ig-category">SUN RISE</span>
+                            <span class="cbp-ig-category">HOANG GIA HOTELS</span>
                         </div>
                     </li>
                     <li>
                         <div class="w3_grid_effect">
                             <span class="cbp-ig-icon w3_ticket"></span>
                             <h4 class="cbp-ig-title">PHỦ SÓNG WIFI VỚI TỐC ĐỘ CAO</h4>
-                            <span class="cbp-ig-category">SUN RISE</span>
+                            <span class="cbp-ig-category">HOANG GIA HOTELS</span>
                         </div>
                     </li>
                 </ul>
@@ -245,21 +247,37 @@
             <div class="advantages-main">
                 <h3 class="title-w3-agileits">Dịch vụ của chúng tôi</h3>
                 <div class="advantage-bottom">
+                    <div class="col-md-6 advantage-grid left-w3ls wow bounceInLeft" style="align-items:center;text-align:center" >
+                        <div style="text-align:center;color:white; margin-top:30px" >
+                            <h3>Nhà hàng </h3>
+                        </div>
+                        <div class=" " style="text-align:center;color:white;align-items:center;display:flex;justify-content:center">
+                            <p style="width:350px">
+                                Nơi bạn có thể thưởng thức địa phương và quốc tế với chất lượng và hương vị tuyệt hảo. Nhà hàng của chúng tôi có không gian rộng rãi và thoáng mát, với tầm nhìn hướng ra núi của Spa
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 advantage-grid right-w3ls wow zoomIn" >
+                        <div class="">
+                            <img src="~/Assets/Client/images/edit_01.jpg" alt=" " class="img-responsive" />
+                        </div>
+                    </div>
+                    <div class="clearfix"> </div>
+                </div>
+                <div class="advantage-bottom" style="margin:15px">
                     <div class="col-md-6 advantage-grid left-w3ls wow bounceInLeft" data-wow-delay="0.3s">
-                        <div class="advantage-block ">
-                            <i class="fa fa-credit-card" aria-hidden="true"></i>
-                            <h4>Ở trước, trả sau! </h4>
-                            <p><i class="fa fa-check" aria-hidden="true"></i>Phòng được trang trí, có máy lạnh thích hợp</p>
-                            <p><i class="fa fa-check" aria-hidden="true"></i>Ban công riêng tư</p>
-
+                        <div class=" ">
+                            <img src="~/Assets/Client/images/edit_02.jpg" alt=" " class="img-responsive" />
                         </div>
                     </div>
                     <div class="col-md-6 advantage-grid right-w3ls wow zoomIn" data-wow-delay="0.3s">
-                        <div class="advantage-block">
-                            <i class="fa fa-clock-o" aria-hidden="true"></i>
-                            <h4>Nhà hàng 24 giờ</h4>
-                            <p><i class="fa fa-check" aria-hidden="true"></i>Phục vụ phòng 24 giờ</p>
-                            <p><i class="fa fa-check" aria-hidden="true"></i>Dịch vụ trợ giúp đặc biệt 24 giờ</p>
+                        <div style="text-align:center;color:white; margin-top:30px">
+                            <h3>Hoa sen </h3>
+                        </div>
+                        <div class=" " style="text-align:center;color:white;align-items:center;display:flex;justify-content:center">
+                            <p style="width:350px">
+                                Hoa sen là biểu tượng của Việt Nam, mang ý nghĩa thanh cao và tinh khiết. Dù mọc trong bùn, hoa sen vẫn vươn lên mạnh mẽ, tượng trưng cho ý chí kiên cường của người Việt. Sen cũng là biểu tượng của sự thuần khiết trong Phật giáo. Hoa sen hiện diện trong văn học, nghệ thuật, và đời sống thường nhật, từ trang trí đến ẩm thực. Với người Việt, hoa sen gắn liền với văn hóa, tâm hồn và niềm tự hào dân tộc.
+                            </p>
                         </div>
                     </div>
                     <div class="clearfix"> </div>
@@ -269,13 +287,13 @@
     </div>
     <!--//sevices-->
     <!-- Gallery -->
-    <section class="portfolio-w3ls" id="gallery">
+    @*<section class="portfolio-w3ls" id="gallery">
         <h3 class="title-w3-agileits title-black-wthree">Những hình ảnh về khách sạn của chúng tôi</h3>
         <div class="col-md-3 gallery-grid gallery1">
             <a href="~/Assets/Client/images/g1.jpg" class="swipebox">
                 <img src="@Url.Content("~/Assets/Client/images/g1.jpg")" class="img-responsive" alt="/">
                 <div class="textbox">
-                    <h4>SUN RISE</h4>
+                    <h4>HOANG GIA HOTELS</h4>
                     <p><i class="fa fa-picture-o" aria-hidden="true"></i></p>
                 </div>
             </a>
@@ -284,7 +302,7 @@
             <a href="~/Assets/Client/images/g2.jpg" class="swipebox">
                 <img src="~/Assets/Client/images/g2.jpg" class="img-responsive" alt="/">
                 <div class="textbox">
-                    <h4>SUN RISE</h4>
+                    <h4>HOANG GIA HOTELS</h4>
                     <p><i class="fa fa-picture-o" aria-hidden="true"></i></p>
                 </div>
             </a>
@@ -293,7 +311,7 @@
             <a href="~/Assets/Client/images/g3.jpg" class="swipebox">
                 <img src="~/Assets/Client/images/g3.jpg" class="img-responsive" alt="/">
                 <div class="textbox">
-                    <h4>SUN RISE</h4>
+                    <h4>HOANG GIA HOTELS</h4>
                     <p><i class="fa fa-picture-o" aria-hidden="true"></i></p>
                 </div>
             </a>
@@ -302,7 +320,7 @@
             <a href="~/Assets/Client/images/g4.jpg" class="swipebox">
                 <img src="~/Assets/Client/images/g4.jpg" class="img-responsive" alt="/">
                 <div class="textbox">
-                    <h4>SUN RISE</h4>
+                    <h4>HOANG GIA HOTELS</h4>
                     <p><i class="fa fa-picture-o" aria-hidden="true"></i></p>
                 </div>
             </a>
@@ -311,7 +329,7 @@
             <a href="~/Assets/Client/images/g5.jpg" class="swipebox">
                 <img src="~/Assets/Client/images/g5.jpg" class="img-responsive" alt="/">
                 <div class="textbox">
-                    <h4>SUN RISE</h4>
+                    <h4>HOANG GIA HOTELS</h4>
                     <p><i class="fa fa-picture-o" aria-hidden="true"></i></p>
                 </div>
             </a>
@@ -320,7 +338,7 @@
             <a href="~/Assets/Client/images/g6.jpg" class="swipebox">
                 <img src="~/Assets/Client/images/g6.jpg" class="img-responsive" alt="/">
                 <div class="textbox">
-                    <h4>SUN RISE</h4>
+                    <h4>HOANG GIA HOTELS</h4>
                     <p><i class="fa fa-picture-o" aria-hidden="true"></i></p>
                 </div>
             </a>
@@ -329,7 +347,7 @@
             <a href="~/Assets/Client/images/g6.jpg" class="swipebox">
                 <img src="~/Assets/Client/images/g7.jpg" class="img-responsive" alt="/">
                 <div class="textbox">
-                    <h4>SUN RISE</h4>
+                    <h4>HOANG GIA HOTELS</h4>
                     <p><i class="fa fa-picture-o" aria-hidden="true"></i></p>
                 </div>
             </a>
@@ -338,7 +356,7 @@
             <a href="~/Assets/Client/images/g6.jpg" class="swipebox">
                 <img src="~/Assets/Client/images/g8.jpg" class="img-responsive" alt="/">
                 <div class="textbox">
-                    <h4>SUN RISE</h4>
+                    <h4>HOANG GIA HOTELS</h4>
                     <p><i class="fa fa-picture-o" aria-hidden="true"></i></p>
                 </div>
             </a>
@@ -347,7 +365,7 @@
             <a href="~/Assets/Client/images/g9.jpg" class="swipebox">
                 <img src="~/Assets/Client/images/g9.jpg" class="img-responsive" alt="/">
                 <div class="textbox">
-                    <h4>SUN RISE</h4>
+                    <h4>HOANG GIA HOTELS</h4>
                     <p><i class="fa fa-picture-o" aria-hidden="true"></i></p>
                 </div>
             </a>
@@ -356,7 +374,7 @@
             <a href="~/Assets/Client/images/g10.jpg" class="swipebox">
                 <img src="~/Assets/Client/images/g10.jpg" class="img-responsive" alt="/">
                 <div class="textbox">
-                    <h4>SUN RISE</h4>
+                    <h4>HOANG GIA HOTELS</h4>
                     <p><i class="fa fa-picture-o" aria-hidden="true"></i></p>
                 </div>
             </a>
@@ -365,7 +383,7 @@
             <a href="~/Assets/Client/images/g4.jpg" class="swipebox">
                 <img src="~/Assets/Client/images/g4.jpg" class="img-responsive" alt="/">
                 <div class="textbox">
-                    <h4>SUN RISE</h4>
+                    <h4>HOANG GIA HOTELS</h4>
                     <p><i class="fa fa-picture-o" aria-hidden="true"></i></p>
                 </div>
             </a>
@@ -374,13 +392,13 @@
             <a href="~/Assets/Client/images/g2.jpg" class="swipebox">
                 <img src="~/Assets/Client/images/g2.jpg" class="img-responsive" alt="/">
                 <div class="textbox">
-                    <h4>SUN RISE</h4>
+                    <h4>HOANG GIA HOTELS</h4>
                     <p><i class="fa fa-picture-o" aria-hidden="true"></i></p>
                 </div>
             </a>
         </div>
         <div class="clearfix"> </div>
-    </section>
+    </section>*@
     <!-- //gallery -->
     <!-- rooms & rates -->
     <div class="plans-section" id="rooms">
@@ -389,18 +407,35 @@
             <div class="priceing-table-main">
                 @foreach (var item in Model)
                 {<a href="/Hotel/DatPhong?maphong=@item.maP">
-                        <div class="col-md-3 price-grid " style="margin-bottom:15px">
-                            <div class="price-block agile">
+                        <div class="col-md-4 price-grid " style="margin-bottom:10px;padding:5px">
+                            <div class="price-block agile figure" style="width:350px;height:280px;margin-left:-20px">
                                 <div class="price-gd-top">
-                                    <img src="~/Images/@item.LoaiPhong.hinhAnh" alt="" class="img-responsive figure-img img-fluid rounded" style="height:300px; width:255px" />
-                                    <h4>@item.LoaiPhong.tenLP</h4>
+                                    <img src="~/Images/@item.LoaiPhong.hinhAnh" alt=""  style="height:200px; width:350px" />
+                                   
                                 </div>
-                                <div class="price-gd-bottom">
-                                    <div class="price-selet" >
-                                        <h3><span>@{ string dongia = item.LoaiPhong.donGia.ToString("#,##0");} @dongia</span>VND</h3>
-                                        <a href="/Hotel/DatPhong?maphong=@item.maP">ĐẶT NGAY</a>
+                                <div style="display:flex">
+                                    <h4 style="padding:10px">
+                                        @item.LoaiPhong.tenLP Room :
+                                    </h4>
+                                    <span style="margin-top:8px;">@{ string dongia = item.LoaiPhong.donGia.ToString("#,##0");} @dongia VND</span>
+                                </div>
+                                <div style="display:flex">
+                                    <span style="padding:0px 35px 0 55px">
+                                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="23" height="23" viewBox="0 0 50 50"> <path d="M 25 1.0507812 C 24.7825 1.0507812 24.565859 1.1197656 24.380859 1.2597656 L 1.3808594 19.210938 C 0.95085938 19.550938 0.8709375 20.179141 1.2109375 20.619141 C 1.5509375 21.049141 2.1791406 21.129062 2.6191406 20.789062 L 4 19.710938 L 4 46 C 4 46.55 4.45 47 5 47 L 19 47 L 19 29 L 31 29 L 31 47 L 45 47 C 45.55 47 46 46.55 46 46 L 46 19.710938 L 47.380859 20.789062 C 47.570859 20.929063 47.78 21 48 21 C 48.3 21 48.589063 20.869141 48.789062 20.619141 C 49.129063 20.179141 49.049141 19.550938 48.619141 19.210938 L 25.619141 1.2597656 C 25.434141 1.1197656 25.2175 1.0507812 25 1.0507812 z M 35 5 L 35 6.0507812 L 41 10.730469 L 41 5 L 35 5 z"></path> </svg>
+                                    </span>
+                                    <span style="padding:0px 35px">
+                                        <img width="25" height="25" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAb0lEQVR4nO2UwQmAQAwEpy6xAbFrfYhtePYRX95DuBPU5B7uwP4WBkISEH9jBHbAPk4Chpo4OUjPbDWxOaeIxBY96q5WAvqH3SK3Ba+utRKHswJLC48FJyOxadRoudA58eqBeGNXzwxM7lrCPILMASzCwY7oVcz8AAAAAElFTkSuQmCC">
+                                    </span>
+                                    <span style="padding:0px 35px">
+                                        <img width="25" height="25" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA8klEQVR4nO3WPUoDQRiA4QdRQT2DjY1eQkHFTi9iJ+gBTCdBz2HQ0hMkYCHoCQIKWvnTBQsjRAJTBJnEgPuNCPvCNN/CPjCzLEO+RTTQxTva2MeMwBZwjUFmXUXixwm5xzaWsImHND+IgrsJ2Po230nzmyj4MwHzI7M5nKX58PkJZquGB2mNdpo572YJ+CUDP5eAizSo4cg6Y/5UEavzV3A7dAv/RU8FtvkxB18WgC9y8FEB+DAHbxSA18ddd/qBaD9dKrLdBcK3k77sRiDcnAQvoxeA9rDih/bwUSE6fNeuKVtDC2+/AF9xjtVp0bo6VfQFJpJM3RWUTMkAAAAASUVORK5CYII=">
+                                    </span>
+                                </div>
+                                @*<div class="price-gd-bottom">
+                                   <div class="price-selet" >
+                                        <p><span>@{ string dongia1 = item.LoaiPhong.donGia.ToString("#,##0");} @dongia</span>VND</p>
+                                       <a href="/Hotel/DatPhong?maphong=@item.maP">ĐẶT NGAY</a>
                                     </div>
-                                </div>
+                                </div>*@
                             </div>
                         </div>
                     </a>
@@ -573,7 +608,7 @@
                 <h4>Kết nối với chúng tôi</h4>
                 <p class="contact-agile1"><strong>Số điện thoại : </strong>0366201726</p>
                 <p class="contact-agile1"><strong>Email :</strong> hoangabc000@gmail.com</p>
-                <p class="contact-agile1"><strong>Địa chỉ :</strong> Đại Học Công Nghiệp Hà Nội</p>
+                <p class="contact-agile1"><strong>Địa chỉ :</strong> Trường Đại học Công nghiệp Hà Nội, Số 298 Đ. Cầu Diễn, Minh Khai, Bắc Từ Liêm, Hà Nội </p>
 
                 <div class="social-bnr-agileits footer-icons-agileinfo">
                     <ul class="social-icons3">
@@ -588,22 +623,22 @@
 
             <div class="col-lg-6 col-md-6 col-sm-6 contact-w3-agile1" data-aos="flip-right" style="margin-top:10px">
                 <h4>Thông tin của chúng tôi</h4>
-                <p class="contact-agile1">
-                    Homestay Cái Bèo tọa lạc tại thị trấn Cát Bà, huyện Cát Hải, Hải Phòng, là một điểm dừng chân lý tưởng cho những du khách muốn khám phá vẻ đẹp thiên nhiên hoang sơ của quần đảo Cát Bà. Với vị trí thuận lợi gần bến thuyền Cái Bèo, homestay mang đến cho du khách cơ hội trải nghiệm cuộc sống giữa biển cả, ngắm nhìn những con tàu chở đầy hải sản tấp nập ra vào mỗi ngày. Không chỉ vậy, homestay còn được bao quanh bởi cảnh quan núi non hùng vĩ, đem đến không gian yên bình và thư giãn cho những ai muốn tạm rời xa sự ồn ào của phố thị. Homestay Cái Bèo nổi bật với thiết kế gần gũi, mộc mạc, tạo cảm giác như đang ở nhà. Chủ nhà thân thiện, hiếu khách, luôn sẵn sàng hỗ trợ và chia sẻ những kinh nghiệm du lịch quý báu, giúp du khách có những trải nghiệm khó quên khi đến với Cát Bà
+                <p class="text-justify" style="color:white">
+                   Tại Hoàng Gia Hotels, chúng tôi mang đến cho bạn những phòng nghỉ sang trọng, tiện nghi và ấm cúng, với tầm nhìn hướng ra bãi biển tuyệt đẹp của Cát Bà. Bạn có thể lựa chọn từ nhiều loại phòng khác nhau, phù hợp với nhu cầu và sở thích của bạn. Mỗi phòng đều được trang bị đầy đủ tiện nghi và có ban công riêng, cho bạn cảm giác thoải mái và thư thái. Hãy để chúng tôi chăm sóc bạn trong kỳ nghỉ của bạn tại nơi đây. cuộc sống giữa biển cả, ngắm nhìn những con tàu chở đầy hải sản tấp nập ra vào mỗi ngày. Không chỉ vậy, homestay còn được bao quanh bởi cảnh quan núi non hùng vĩ, đem đến không gian yên bình và thư giãn cho những ai muốn tạm rời xa sự ồn ào của phố thị. Homestay Cái Bèo nổi bật với thiết kế gần gũi, mộc mạc, tạo cảm giác như đang ở nhà. Chủ nhà thân thiện, hiếu khách, luôn sẵn sàng hỗ trợ và chia sẻ những kinh nghiệm du lịch quý báu, giúp du khách có những trải nghiệm khó quên khi đến với Cát Bà
                 </p>
 
             </div>
-            <div class="row col-12">
+            @*<div class="row col-12">
                 <div>
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.4737884515116!2d105.73253187468059!3d21.05373098060181!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31345457e292d5bf%3A0x20ac91c94d74439a!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBDw7RuZyBuZ2hp4buHcCBIw6AgTuG7mWk!5e0!3m2!1svi!2s!4v1699368010473!5m2!1svi!2s" style="border:0;width:100%; height:500px" allowfullscreen="" class=col-12 loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
-            </div>
+            </div>*@
             <div class="clearfix"></div>
         </div>
     </section>
     <!-- /contact -->
-    <div class="copy">
-        <p>© 2024SUNRISE . Thiết kế bởi <a href="#">Nguyễn Đắc Hoàng</a> </p>
+    <div class="copy" >
+        <p style="color:white">© 2024HOANGGIAHOTELS . Thiết kế bởi <a style="color: white" href="#">HOANG GIA HOTELS</a> </p>
     </div>
     <!--/footer -->
     <!-- js -->
