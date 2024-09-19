@@ -26,7 +26,7 @@ namespace DoAnHMS.Controllers
         // GET: PhieuDatPhong
         public ActionResult Index()
         {
-            var phieuDatPhongs = db.PhieuDatPhongs.Include(p => p.KhachHang).Include(p => p.NhanVien).OrderByDescending(p=>p.ngayDen);
+            var phieuDatPhongs = db.PhieuDatPhongs.Include(p => p.KhachHang).Include(p => p.NhanVien).OrderByDescending(p => p.ngayDen);
             return View(phieuDatPhongs.ToList());
         }
 
@@ -157,18 +157,18 @@ namespace DoAnHMS.Controllers
         {
             PhieuDatPhong phieuDatPhong = db.PhieuDatPhongs.Find(id);
             List<CTPhieuDatPhong> cTPhieuDatPhongs = db.CTPhieuDatPhongs.Where(x => x.maPDP == id).ToList();
-            foreach(var item in cTPhieuDatPhongs)
+            foreach (var item in cTPhieuDatPhongs)
             {
                 db.CTPhieuDatPhongs.Remove(item);
             }
             List<PhieuThuePhong> phieuThuePhongs = db.PhieuThuePhongs.Where(x => x.maPDP == id).ToList();
-            if(phieuThuePhongs != null)
+            if (phieuThuePhongs != null)
             {
-                foreach(var item in phieuThuePhongs)
+                foreach (var item in phieuThuePhongs)
                 {
                     List<CTPhieuThuePhong> cTPhieuThuePhongs = db.CTPhieuThuePhongs.Where(x => x.maPTP == item.maPTP).ToList();
                     db.PhieuThuePhongs.Remove(item);
-                    foreach(var detailItem in cTPhieuThuePhongs)
+                    foreach (var detailItem in cTPhieuThuePhongs)
                     {
                         db.CTPhieuThuePhongs.Remove(detailItem);
                     }
@@ -185,9 +185,9 @@ namespace DoAnHMS.Controllers
         {
             var phongDaChon = db.CTPhieuDatPhongs.Where(x => x.maPDP == maPDP).Select(x => x.maP).ToList();
             var phongs = db.Phongs.Select(x => x.maP).ToList();
-            foreach(var item in phongDaChon)
+            foreach (var item in phongDaChon)
             {
-                if(phongs.Contains(item))
+                if (phongs.Contains(item))
                 {
                     phongs.Remove(item);
                 }
@@ -257,7 +257,7 @@ namespace DoAnHMS.Controllers
             phieuDatPhong.tongTienCoc -= cTPhieuDatPhong.tienCoc;
             db.Entry(phieuDatPhong).State = EntityState.Modified;
             db.SaveChanges();
-            return RedirectToAction("Details", "PhieuDatPhongs", new { id = maPDP});
+            return RedirectToAction("Details", "PhieuDatPhongs", new { id = maPDP });
         }
 
         protected override void Dispose(bool disposing)

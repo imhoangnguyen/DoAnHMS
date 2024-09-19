@@ -57,7 +57,7 @@
         </div>
         <div class="clearfix"></div>
     </div>
-    <div class="w3_navigation">
+    <div class="w3_navigation" style="background-color:black">
         <div class="container">
             <nav class="navbar navbar-default">
                 <div class="navbar-header navbar-left">
@@ -83,7 +83,7 @@
     </div>
     <!-- //header -->
     <!-- feedback -->
-    <section class="contact-w3ls" id="contact">
+    <section class="advantages" id="contact">
         <div class="container">
             <div class="row">
 
@@ -92,9 +92,9 @@
                 {
                     HttpMethod = "POST",
                     UpdateTargetId = "load_data",
-                    OnSuccess="OnSuccessCO",
-                    OnFailure="OnFailure",
-                    OnBegin="OnBeginCO"
+                    OnSuccess = "OnSuccessCO",
+                    OnFailure = "OnFailure",
+                    OnBegin = "OnBeginCO"
                 }
 
                   , new { @id = "myForm" }))
@@ -102,8 +102,8 @@
                     <script>
                         function OnSuccessCO(res) {
                             if (res.Success) {
-                                    location.href = res.Url
-                           
+                                location.href = res.Url
+
                             }
                         }
                         function OnFailure(xhr, status, error) {
@@ -116,59 +116,59 @@
                     @Html.AntiForgeryToken()
                     <div class="col-lg-6 col-md-6 col-sm-6 contact-w3-agile2" data-aos="flip-left" id="myForm">
                         <div class="contact-agileits">
-                            <h4>ĐĂNG KÍ PHÒNG</h4>
+                            <h4 style="color:white">ĐĂNG KÍ PHÒNG</h4>
                             <h5 style="color:white; font-size:18px">Đăng Kí Phòng @ViewBag.MaPhong. Bạn Cần Nhập Đủ Thông Tin Bên Dưới</h5>
                             <br />
                             <div class="control-group form-group" style="display:none">
-                                <label class="contact-p1">Mã Phòng:</label>
+                                <label style="color:white" class="contact-p1">Mã Phòng:</label>
                                 <input type="text" class="form-control" name="MaP" id="name" value="@ViewBag.MaPhongID">
                                 <p class="help-block"></p>
                             </div>
 
                             <div class="control-group form-group">
-                                <label class="contact-p1">Họ và tên:</label>
+                                <label style="color:white" class="contact-p1">Họ và tên:</label>
                                 <input type="text" class="form-control" name="TenKH" id="name" required>
                                 <p class="help-block"></p>
                             </div>
 
                             <div class="control-group form-group">
-                                <label class="contact-p1">Số điện thoại:</label>
+                                <label style="color:white" class="contact-p1">Số điện thoại:</label>
                                 <input type="tel" class="form-control" name="SDT" id="phone" required>
                                 <p class="help-block"></p>
                             </div>
 
                             <div class="control-group form-group">
-                                <label class="contact-p1">CMND - Hộ chiếu:</label>
+                                <label style="color:white" class="contact-p1">CMND - Hộ chiếu:</label>
                                 <input type="tel" class="form-control" name="CMND_Passport" maxlength="15" id="phone" required>
                                 <p class="help-block"></p>
                             </div>
 
                             <div class="control-group form-group">
-                                <label class="contact-p1">Địa chỉ email:</label>
+                                <label style="color:white" class="contact-p1">Địa chỉ email:</label>
                                 <input type="email" class="form-control" name="Email" id="email" required>
                                 <p class="help-block"></p>
                             </div>
 
                             <div class="control-group form-group">
-                                <label class="contact-p1">Ngày đến:</label>
+                                <label style="color:white" class="contact-p1">Ngày đến:</label>
                                 <input type="datetime-local" id="name" name="NgayDen" class="form-control" required>
                                 <p class="help-block"></p>
                             </div>
 
                             <div class="control-group form-group">
-                                <label class="contact-p1">Ngày trả:</label>
+                                <label style="color:white" class="contact-p1">Ngày trả:</label>
                                 <input type="datetime-local" id="name" name="NgayDi" class="form-control" required>
                                 <p class="help-block"></p>
                             </div>
 
                             <div class="control-group form-group">
-                                <label class="contact-p1">Số phòng muốn đặt:</label>
-                                <input type="number" id="phone" name="SoLuong" class="form-control"  required>
+                                <label style="color:white" class="contact-p1">Số người đặt:</label>
+                                <input type="number" id="phone" name="SoLuong" class="form-control" required>
                                 <p class="help-block"></p>
                             </div>
 
                             <div class="control-group form-group">
-                                <label class="contact-p1">Chọn phương thức thanh toán:</label>
+                                <label class="contact-p1" style="color:white">Chọn phương thức thanh toán:</label>
                                 <select class="form-control" name="TypePayment" id="phone">
                                     <option value="1" selected>Thanh toán tại quầy</option>
                                     <option value="0">Thanh toán qua Zalo</option>
@@ -177,13 +177,13 @@
                                 <p class="help-block"></p>
                             </div>
                             @*<div class="text" id="load_form_Payment" style="display:none; background-color:antiquewhite;color:black;padding:5px;border-radius:10px">
-                                <h5><label>Cách 1: Chuyển hướng sang VNPAY phương thức thanh toán</label></h5>
-                                <label><input type="radio" name="typePayMentVN" value="0" checked />Cổng thanh toán VNPAYOR</label><br />
-                                <h5><label>Cách 2: Tách phương thức thanh toán tại site của Marchant</label></h5>
-                                <label><input type="radio" name="typePayMentVN" value="1" />Thanh toán qua ứng dụng VNPAYQR</label><br />
-                                <label><input type="radio" name="typePayMentVN" value="2" />ATM- Tài khoản ngân hàng nội địa</label><br />
-                                <label><input type="radio" name="typePayMentVN" value="3" />Thanh toán qua thẻ quốc tế</label><br />
-                            </div>*@
+                                    <h5><label>Cách 1: Chuyển hướng sang VNPAY phương thức thanh toán</label></h5>
+                                    <label><input type="radio" name="typePayMentVN" value="0" checked />Cổng thanh toán VNPAYOR</label><br />
+                                    <h5><label>Cách 2: Tách phương thức thanh toán tại site của Marchant</label></h5>
+                                    <label><input type="radio" name="typePayMentVN" value="1" />Thanh toán qua ứng dụng VNPAYQR</label><br />
+                                    <label><input type="radio" name="typePayMentVN" value="2" />ATM- Tài khoản ngân hàng nội địa</label><br />
+                                    <label><input type="radio" name="typePayMentVN" value="3" />Thanh toán qua thẻ quốc tế</label><br />
+                                </div>*@
                             <div class="form-control" id="load_send" style="display:none"></div>
 
                             <input id="submitButton" type="submit" name="sub" value="Gửi ngay" class="btn btn-primary mb-2" style="margin: 0 auto">
@@ -194,7 +194,7 @@
                         <div class="">
                             <img src="~/Assets/Client/images/home_stay_1.jpg" alt=" " class="img-responsive col-12" />
                             <div class="contact-agileits" style="color:white">
-                                <p>
+                                <p style="color:white">
                                     SPhòng view đẹp, nhân viên Ly Nal ễ tân nhiệt tình dịch vụ tốt!
                                     Khu vui chơi phong phú nhiều trò chơi rộng lớn có nhiều cây cối,
                                     đồ ăn phong phú đa dạng, có cơ hội sẽ ghé trở lại một lần nữa, và sẽ giới thiệu với bạn bè
@@ -214,8 +214,8 @@
         </div>
     </section>
     <!-- /contact -->
-    <div class="copy">
-        <p>© 2024SUNRISE . Thiết kế bởi <a href="#">Nguyễn Đắc Hoàng</a> </p>
+    <div class="copy" style="background-color:black">
+        <p style="color:white">© 2024SUNRISE . Thiết kế bởi <a href="#">Nguyễn Đắc Hoàng</a> </p>
     </div>
     <!--/footer -->
     <!-- js -->
@@ -299,7 +299,7 @@
             });
         });*/
 
-        
+
 
     </script>
     <!-- //Calendar -->

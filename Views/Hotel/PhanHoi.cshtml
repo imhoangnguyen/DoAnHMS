@@ -56,7 +56,7 @@
         </div>
         <div class="clearfix"></div>
     </div>
-    <div class="w3_navigation">
+    <div class="w3_navigation" style="background-color:black">
         <div class="container">
             <nav class="navbar navbar-default">
                 <div class="navbar-header navbar-left">
@@ -82,12 +82,12 @@
     </div>
     <!-- //header -->
     <!-- feedback -->
-    <section class="contact-w3ls" id="contact">
+    <section class="advantages" id="contact">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-md-8 col-sm-8 contact-w3-agile2" data-aos="flip-left">
                     <div class="contact-agileits">
-                        <h4>Phản hồi</h4>
+                        <h4 style="color:white">Phản hồi</h4>
                         <h5 style="color:white; font-size:18px">Những đóng góp, những ý kiến của bạn sẽ giúp khách sạn của chúng tôi hoàn thiện hơn.</h5>
                         <br />
                         @using (Html.BeginForm("PhanHoi", "Hotel", FormMethod.Post, new { @name = "sentMessage", @id = "contactForm" }))
@@ -96,28 +96,28 @@
                             @*<form method="post" action="/Hotel/Create" name="sentMessage" id="contactForm">*@
                             <div class="control-group form-group">
 
-                                <label class="contact-p1">Họ và tên:</label>
+                                <label style="color:white" class="contact-p1">Họ và tên:</label>
                                 <input type="text" class="form-control" name="hoTen" id="name" required>
                                 <p class="help-block"></p>
 
                             </div>
                             <div class="control-group form-group">
 
-                                <label class="contact-p1">Số điện thoại:</label>
+                                <label style="color:white" class="contact-p1">Số điện thoại:</label>
                                 <input type="tel" class="form-control" name="sdt" id="phone" required>
                                 <p class="help-block"></p>
 
                             </div>
                             <div class="control-group form-group">
 
-                                <label class="contact-p1">Địa chỉ email:</label>
+                                <label style="color:white" class="contact-p1">Địa chỉ email:</label>
                                 <input type="email" class="form-control" name="email" id="email" required>
                                 <p class="help-block"></p>
 
                             </div>
 
                             <div class="control-group form-group">
-                                <label class="contact-p1">Nội dung:</label>
+                                <label style="color:white" class="contact-p1">Nội dung:</label>
                                 <textarea name="noiDung" rows="4" cols="50" class="form-control" id="noiDung" required></textarea>
                                 <p class="help-block"></p>
 
@@ -131,8 +131,8 @@
         </div>
     </section>
     <!-- /contact -->
-    <div class="copy">
-        <p>© 2024SUNRISE . Thiết kế bởi <a href="#">Nguyễn Đắc Hoàng</a> </p>
+    <div class="copy" style="background-color:black">
+        <p style="color:white">© 2024SUNRISE . Thiết kế bởi <a style="color:white" href="#">Nguyễn Đắc Hoàng</a> </p>
     </div>
     <!--/footer -->
     <!-- js -->

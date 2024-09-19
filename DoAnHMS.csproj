@@ -1935,6 +1935,7 @@
     <Content Include="Assets\Client\images\5.jpg" />
     <Content Include="Assets\Client\images\a1.jpg" />
     <Content Include="Assets\Client\images\about.jpg" />
+    <Content Include="Assets\Client\images\anhbien_01.jpg" />
     <Content Include="Assets\Client\images\arr.png" />
     <Content Include="Assets\Client\images\bang2.jpg" />
     <Content Include="Assets\Client\images\bang3.jpg" />
@@ -1965,8 +1966,10 @@
     <Content Include="Assets\Client\images\home_stay_3.png" />
     <Content Include="Assets\Client\images\icons.svg" />
     <Content Include="Assets\Client\images\image.png" />
+    <Content Include="Assets\Client\images\mau-8-400x246.jpg" />
     <Content Include="Assets\Client\images\Nghia.jpg" />
     <Content Include="Assets\Client\images\Nghia1.jpg" />
+    <Content Include="Assets\Client\images\nha-hang.jpg" />
     <Content Include="Assets\Client\images\Phuong.jpg" />
     <Content Include="Assets\Client\images\Phuong1.jpg" />
     <Content Include="Assets\Client\images\plzwait.png" />
@@ -2001,6 +2004,9 @@
     <Content Include="Assets\Client\js\modernizr-2.6.2.min.js" />
     <Content Include="Assets\Client\js\move-top.js" />
     <Content Include="Assets\Client\js\responsiveslides.min.js" />
+    <Content Include="C:\Users\This MC\Downloads\anhbien.jpg">
+      <Link>Assets\Client\images\anhbien.jpg</Link>
+    </Content>
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />

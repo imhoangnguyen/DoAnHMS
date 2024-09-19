@@ -408,7 +408,7 @@ li.menu__item:nth-child(6) {
 .agileits-banner-info h4 {
     font-size: 4em;
     color: #ffce14;
-    letter-spacing: 27px;
+    letter-spacing: 5px;
     font-weight: bold;
     text-transform: uppercase;
     font-family: 'Oswald', sans-serif;
@@ -1478,7 +1478,7 @@ text-align:center;
 /*-- //Gallery Section --*/
 /*-- contact --*/
 section.contact-w3ls {
-	background:url(../images/contact.jpg) no-repeat;
+	background:url(../images/services.jpg) no-repeat;
 	background-position:center;
 	background-attachment:fixed;
 	background-size:100% 100%;

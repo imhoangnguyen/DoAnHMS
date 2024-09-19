@@ -85,7 +85,7 @@ namespace DoAnHMS.Controllers
                 pdp.ngayDen = model.NgayDen;
                 pdp.ngayDi = model.NgayDi;
                 pdp.tongTienCoc = 0;
-                pdp.soNguoi = 1;
+                pdp.soNguoi = model.SoLuong;
                 pdp.tinhTrang = false;
                 pdp.maNV = "NV0001";
                 db.PhieuDatPhongs.Add(pdp);
@@ -178,6 +178,10 @@ namespace DoAnHMS.Controllers
             {
                 phanHoi.ngayGui = DateTime.UtcNow;
                 phanHoi.TinhTrang = false;
+                if (phanHoi.noiDung.Length > 200)
+                {
+                    phanHoi.noiDung = phanHoi.noiDung.Substring(0, 200);
+                }
                 db.PhanHois.Add(phanHoi);
                 db.SaveChanges();
                 return RedirectToAction("ThankYou");
