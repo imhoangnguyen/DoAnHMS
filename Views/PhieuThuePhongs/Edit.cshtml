@@ -45,21 +45,23 @@
             </div>
         </div>
 
-        <div class="form-group">
-            @Html.LabelFor(model => model.ngayThue, "Ngày thuê", htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-6">
-                @Html.EditorFor(model => model.ngayThue, new { htmlAttributes = new { @class = "datepicker form-control", @readonly = "true", @type = "text", @Value = Model.ngayThue.ToString("dd/MM/yyyy") } })
-                @Html.ValidationMessageFor(model => model.ngayThue, "", new { @class = "text-danger" })
-            </div>
-        </div>
+         <div class="form-group">
+     @Html.LabelFor(model => model.ngayThue, "Ngày thuê", htmlAttributes: new { @class = "control-label col-md-2" })
+     <div class="col-md-6">
+         @*@Html.EditorFor(model => model.ngayThue, new { htmlAttributes = new { @class = "datepicker form-control", @readonly = "true", @type = "text", @Value = Model.ngayThue.ToString("dd/MM/yyyy") } })
+         @Html.ValidationMessageFor(model => model.ngayThue, "", new { @class = "text-danger" })*@
+         <input type="datetime-local" id="ngayThue" name="ngayThue" class="form-control" value="@Model.ngayThue.ToString("yyyy-MM-ddTHH:mm")" required>
+     </div>
+ </div>
 
-        <div class="form-group">
-            @Html.LabelFor(model => model.ngayTra, "Ngày trả", htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-6">
-                @Html.EditorFor(model => model.ngayTra, new { htmlAttributes = new { @class = "datepicker form-control", @readonly = "true", @type = "text", @Value = Model.ngayTra.ToString("dd/MM/yyyy") } })
-                @Html.ValidationMessageFor(model => model.ngayTra, "", new { @class = "text-danger" })
-            </div>
-        </div>
+ <div class="form-group">
+     @Html.LabelFor(model => model.ngayTra, "Ngày trả", htmlAttributes: new { @class = "control-label col-md-2" })
+     <div class="col-md-6">
+         @*@Html.EditorFor(model => model.ngayTra, new { htmlAttributes = new { @class = "datepicker form-control", @readonly = "true", @type = "text", @Value = Model.ngayTra.ToString("dd/MM/yyyy") } })
+ @Html.ValidationMessageFor(model => model.ngayTra, "", new { @class = "text-danger" })*@
+         <input type="datetime-local" id="ngayTra" name="ngayTra" class="form-control" value="@Model.ngayTra.ToString("yyyy-MM-ddTHH:mm")" required>
+     </div>
+ </div>
 
         <div class="form-group">
             @Html.LabelFor(model => model.maNV, "Nhân viên", htmlAttributes: new { @class = "control-label col-md-2" })

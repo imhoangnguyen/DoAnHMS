@@ -125,11 +125,14 @@ namespace DoAnHMS.Controllers
         {
             if (ModelState.IsValid)
             {
+                phieuDatPhong.maNV = "NV0001";
                 db.Entry(phieuDatPhong).State = EntityState.Modified;
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
+            ViewBag.maNV = new SelectList(db.NhanViens, "maNV", "tenNV", phieuDatPhong.maNV);
             ViewBag.maKH = new SelectList(db.KhachHangs, "maKH", "tenKH", phieuDatPhong.maKH);
+
             return View(phieuDatPhong);
         }
 

@@ -1,46 +1,34 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Admin\\Documents\\Cumputer old\\chuyen_May\\APP\\DoAnHMS\\DoAnHMS\\",
+  "WorkspaceRootPath": "E:\\do_an_hoan_thanh\\DoAnHMS\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F473918E-F107-4FE0-BCD8-9B64EE9F4C1C}|DoAnHMS.csproj|c:\\users\\admin\\documents\\cumputer old\\chuyen_may\\app\\doanhms\\doanhms\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F473918E-F107-4FE0-BCD8-9B64EE9F4C1C}|DoAnHMS.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F473918E-F107-4FE0-BCD8-9B64EE9F4C1C}|DoAnHMS.csproj|C:\\Users\\Admin\\Documents\\Cumputer old\\chuyen_May\\APP\\DoAnHMS\\DoAnHMS\\controllers\\thongtintaikhoancontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F473918E-F107-4FE0-BCD8-9B64EE9F4C1C}|DoAnHMS.csproj|solutionrelative:controllers\\thongtintaikhoancontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F473918E-F107-4FE0-BCD8-9B64EE9F4C1C}|DoAnHMS.csproj|c:\\users\\admin\\documents\\cumputer old\\chuyen_may\\app\\doanhms\\doanhms\\views\\thongtintaikhoan\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F473918E-F107-4FE0-BCD8-9B64EE9F4C1C}|DoAnHMS.csproj|solutionrelative:views\\thongtintaikhoan\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F473918E-F107-4FE0-BCD8-9B64EE9F4C1C}|DoAnHMS.csproj|c:\\users\\admin\\documents\\cumputer old\\chuyen_may\\app\\doanhms\\doanhms\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F473918E-F107-4FE0-BCD8-9B64EE9F4C1C}|DoAnHMS.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F473918E-F107-4FE0-BCD8-9B64EE9F4C1C}|DoAnHMS.csproj|C:\\Users\\Admin\\Documents\\Cumputer old\\chuyen_May\\APP\\DoAnHMS\\DoAnHMS\\views\\hotel\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F473918E-F107-4FE0-BCD8-9B64EE9F4C1C}|DoAnHMS.csproj|solutionrelative:views\\hotel\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F473918E-F107-4FE0-BCD8-9B64EE9F4C1C}|DoAnHMS.csproj|C:\\Users\\Admin\\Documents\\Cumputer old\\chuyen_May\\APP\\DoAnHMS\\DoAnHMS\\controllers\\hotelcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F473918E-F107-4FE0-BCD8-9B64EE9F4C1C}|DoAnHMS.csproj|e:\\do_an_hoan_thanh\\doanhms\\controllers\\hotelcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F473918E-F107-4FE0-BCD8-9B64EE9F4C1C}|DoAnHMS.csproj|solutionrelative:controllers\\hotelcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F473918E-F107-4FE0-BCD8-9B64EE9F4C1C}|DoAnHMS.csproj|C:\\Users\\Admin\\Documents\\Cumputer old\\chuyen_May\\APP\\DoAnHMS\\DoAnHMS\\views\\hotel\\thankyou.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F473918E-F107-4FE0-BCD8-9B64EE9F4C1C}|DoAnHMS.csproj|solutionrelative:views\\hotel\\thankyou.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{F473918E-F107-4FE0-BCD8-9B64EE9F4C1C}|DoAnHMS.csproj|E:\\do_an_hoan_thanh\\DoAnHMS\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{F473918E-F107-4FE0-BCD8-9B64EE9F4C1C}|DoAnHMS.csproj|solutionrelative:web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F473918E-F107-4FE0-BCD8-9B64EE9F4C1C}|DoAnHMS.csproj|C:\\Users\\Admin\\Documents\\Cumputer old\\chuyen_May\\APP\\DoAnHMS\\DoAnHMS\\views\\hotel\\announce.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F473918E-F107-4FE0-BCD8-9B64EE9F4C1C}|DoAnHMS.csproj|solutionrelative:views\\hotel\\announce.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{F473918E-F107-4FE0-BCD8-9B64EE9F4C1C}|DoAnHMS.csproj|E:\\do_an_hoan_thanh\\DoAnHMS\\views\\hotel\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F473918E-F107-4FE0-BCD8-9B64EE9F4C1C}|DoAnHMS.csproj|solutionrelative:views\\hotel\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F473918E-F107-4FE0-BCD8-9B64EE9F4C1C}|DoAnHMS.csproj|C:\\Users\\Admin\\Documents\\Cumputer old\\chuyen_May\\APP\\DoAnHMS\\DoAnHMS\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F473918E-F107-4FE0-BCD8-9B64EE9F4C1C}|DoAnHMS.csproj|solutionrelative:controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F473918E-F107-4FE0-BCD8-9B64EE9F4C1C}|DoAnHMS.csproj|E:\\do_an_hoan_thanh\\DoAnHMS\\controllers\\phieudatphongscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F473918E-F107-4FE0-BCD8-9B64EE9F4C1C}|DoAnHMS.csproj|solutionrelative:controllers\\phieudatphongscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F473918E-F107-4FE0-BCD8-9B64EE9F4C1C}|DoAnHMS.csproj|C:\\Users\\Admin\\Documents\\Cumputer old\\chuyen_May\\APP\\DoAnHMS\\DoAnHMS\\controllers\\thongkecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F473918E-F107-4FE0-BCD8-9B64EE9F4C1C}|DoAnHMS.csproj|solutionrelative:controllers\\thongkecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F473918E-F107-4FE0-BCD8-9B64EE9F4C1C}|DoAnHMS.csproj|E:\\do_an_hoan_thanh\\DoAnHMS\\views\\phieudatphongs\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F473918E-F107-4FE0-BCD8-9B64EE9F4C1C}|DoAnHMS.csproj|solutionrelative:views\\phieudatphongs\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F473918E-F107-4FE0-BCD8-9B64EE9F4C1C}|DoAnHMS.csproj|E:\\do_an_hoan_thanh\\DoAnHMS\\models\\phieudatphong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F473918E-F107-4FE0-BCD8-9B64EE9F4C1C}|DoAnHMS.csproj|solutionrelative:models\\phieudatphong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F473918E-F107-4FE0-BCD8-9B64EE9F4C1C}|DoAnHMS.csproj|E:\\do_an_hoan_thanh\\DoAnHMS\\views\\phieudatphongs\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F473918E-F107-4FE0-BCD8-9B64EE9F4C1C}|DoAnHMS.csproj|solutionrelative:views\\phieudatphongs\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,132 +38,97 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\Cumputer old\\chuyen_May\\APP\\DoAnHMS\\DoAnHMS\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Admin\\Documents\\Cumputer old\\chuyen_May\\APP\\DoAnHMS\\DoAnHMS\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "Views\\Home\\Index.cshtml",
-              "ViewState": "AQIAAF0AAAAAAAAAAAAAAKsAAAAeAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-09T13:28:59.505Z",
-              "EditorCaption": ""
+              "DocumentIndex": 5,
+              "Title": "PhieuDatPhong.cs",
+              "DocumentMoniker": "E:\\do_an_hoan_thanh\\DoAnHMS\\Models\\PhieuDatPhong.cs",
+              "RelativeDocumentMoniker": "Models\\PhieuDatPhong.cs",
+              "ToolTip": "E:\\do_an_hoan_thanh\\DoAnHMS\\Models\\PhieuDatPhong.cs",
+              "RelativeToolTip": "Models\\PhieuDatPhong.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAQwBkAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-23T16:21:13.847Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\Cumputer old\\chuyen_May\\APP\\DoAnHMS\\DoAnHMS\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\Admin\\Documents\\Cumputer old\\chuyen_May\\APP\\DoAnHMS\\DoAnHMS\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "Controllers\\HomeController.cs",
-              "ViewState": "AQIAAEcAAAAAAAAAAAAIwE4AAABYAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-09T12:08:38.724Z",
+              "DocumentIndex": 1,
+              "Title": "Web.config",
+              "DocumentMoniker": "E:\\do_an_hoan_thanh\\DoAnHMS\\Web.config",
+              "RelativeDocumentMoniker": "Web.config",
+              "ToolTip": "E:\\do_an_hoan_thanh\\DoAnHMS\\Web.config",
+              "RelativeToolTip": "Web.config",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAFkAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-09-27T14:46:27.816Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\Cumputer old\\chuyen_May\\APP\\DoAnHMS\\DoAnHMS\\Views\\ThongTinTaiKhoan\\Edit.cshtml",
-              "RelativeDocumentMoniker": "Views\\ThongTinTaiKhoan\\Edit.cshtml",
-              "ToolTip": "C:\\Users\\Admin\\Documents\\Cumputer old\\chuyen_May\\APP\\DoAnHMS\\DoAnHMS\\Views\\ThongTinTaiKhoan\\Edit.cshtml",
-              "RelativeToolTip": "Views\\ThongTinTaiKhoan\\Edit.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAGYAAABTAAAA",
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "E:\\do_an_hoan_thanh\\DoAnHMS\\Views\\Hotel\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Hotel\\Index.cshtml",
+              "ToolTip": "E:\\do_an_hoan_thanh\\DoAnHMS\\Views\\Hotel\\Index.cshtml",
+              "RelativeToolTip": "Views\\Hotel\\Index.cshtml",
+              "ViewState": "AgIAAOYBAAAAAAAAAAAAAPMBAABOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-09T11:58:41.274Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ThongTinTaiKhoanController.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\Cumputer old\\chuyen_May\\APP\\DoAnHMS\\DoAnHMS\\Controllers\\ThongTinTaiKhoanController.cs",
-              "RelativeDocumentMoniker": "Controllers\\ThongTinTaiKhoanController.cs",
-              "ToolTip": "C:\\Users\\Admin\\Documents\\Cumputer old\\chuyen_May\\APP\\DoAnHMS\\DoAnHMS\\Controllers\\ThongTinTaiKhoanController.cs",
-              "RelativeToolTip": "Controllers\\ThongTinTaiKhoanController.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAsAAAAhAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-09T11:53:37.449Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ThankYou.cshtml",
-              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\Cumputer old\\chuyen_May\\APP\\DoAnHMS\\DoAnHMS\\Views\\Hotel\\ThankYou.cshtml",
-              "RelativeDocumentMoniker": "Views\\Hotel\\ThankYou.cshtml",
-              "ToolTip": "C:\\Users\\Admin\\Documents\\Cumputer old\\chuyen_May\\APP\\DoAnHMS\\DoAnHMS\\Views\\Hotel\\ThankYou.cshtml",
-              "RelativeToolTip": "Views\\Hotel\\ThankYou.cshtml",
-              "ViewState": "AQIAAEIAAAAAAAAAAAAAAFMAAAAcAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-09T11:51:32.977Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Announce.cshtml",
-              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\Cumputer old\\chuyen_May\\APP\\DoAnHMS\\DoAnHMS\\Views\\Hotel\\Announce.cshtml",
-              "RelativeDocumentMoniker": "Views\\Hotel\\Announce.cshtml",
-              "ToolTip": "C:\\Users\\Admin\\Documents\\Cumputer old\\chuyen_May\\APP\\DoAnHMS\\DoAnHMS\\Views\\Hotel\\Announce.cshtml",
-              "RelativeToolTip": "Views\\Hotel\\Announce.cshtml",
-              "ViewState": "AQIAADMAAAAAAAAAAAAAAEUAAABuAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-09T11:47:57.307Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "LoginController.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\Cumputer old\\chuyen_May\\APP\\DoAnHMS\\DoAnHMS\\Controllers\\LoginController.cs",
-              "RelativeDocumentMoniker": "Controllers\\LoginController.cs",
-              "ToolTip": "C:\\Users\\Admin\\Documents\\Cumputer old\\chuyen_May\\APP\\DoAnHMS\\DoAnHMS\\Controllers\\LoginController.cs",
-              "RelativeToolTip": "Controllers\\LoginController.cs",
-              "ViewState": "AQIAAA4AAAAAAAAAAAAAwBoAAAARAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-09T11:45:03.031Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "ThongKeController.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\Cumputer old\\chuyen_May\\APP\\DoAnHMS\\DoAnHMS\\Controllers\\ThongKeController.cs",
-              "RelativeDocumentMoniker": "Controllers\\ThongKeController.cs",
-              "ToolTip": "C:\\Users\\Admin\\Documents\\Cumputer old\\chuyen_May\\APP\\DoAnHMS\\DoAnHMS\\Controllers\\ThongKeController.cs",
-              "RelativeToolTip": "Controllers\\ThongKeController.cs",
-              "ViewState": "AQIAACIAAAAAAAAAAAAQwBcAAAAYAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-09T11:43:09.76Z"
+              "WhenOpened": "2024-09-23T15:23:32.242Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\Cumputer old\\chuyen_May\\APP\\DoAnHMS\\DoAnHMS\\Views\\Hotel\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Hotel\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Admin\\Documents\\Cumputer old\\chuyen_May\\APP\\DoAnHMS\\DoAnHMS\\Views\\Hotel\\Index.cshtml",
-              "RelativeToolTip": "Views\\Hotel\\Index.cshtml",
-              "ViewState": "AQIAAEsAAAAAAAAAAAAAAFQAAABbAAAA",
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "E:\\do_an_hoan_thanh\\DoAnHMS\\Views\\PhieuDatPhongs\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Views\\PhieuDatPhongs\\Edit.cshtml",
+              "ToolTip": "E:\\do_an_hoan_thanh\\DoAnHMS\\Views\\PhieuDatPhongs\\Edit.cshtml",
+              "RelativeToolTip": "Views\\PhieuDatPhongs\\Edit.cshtml",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAACgAAACdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-09T11:23:23.742Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-23T16:05:46.131Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "HotelController.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\Cumputer old\\chuyen_May\\APP\\DoAnHMS\\DoAnHMS\\Controllers\\HotelController.cs",
-              "RelativeDocumentMoniker": "Controllers\\HotelController.cs",
-              "ToolTip": "C:\\Users\\Admin\\Documents\\Cumputer old\\chuyen_May\\APP\\DoAnHMS\\DoAnHMS\\Controllers\\HotelController.cs",
-              "RelativeToolTip": "Controllers\\HotelController.cs",
-              "ViewState": "AQIAAHwAAAAAAAAAAAAAAIcAAABXAAAA",
+              "DocumentIndex": 6,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "E:\\do_an_hoan_thanh\\DoAnHMS\\Views\\PhieuDatPhongs\\Details.cshtml",
+              "RelativeDocumentMoniker": "Views\\PhieuDatPhongs\\Details.cshtml",
+              "ToolTip": "E:\\do_an_hoan_thanh\\DoAnHMS\\Views\\PhieuDatPhongs\\Details.cshtml",
+              "RelativeToolTip": "Views\\PhieuDatPhongs\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-23T16:05:43.333Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PhieuDatPhongsController.cs",
+              "DocumentMoniker": "E:\\do_an_hoan_thanh\\DoAnHMS\\Controllers\\PhieuDatPhongsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\PhieuDatPhongsController.cs",
+              "ToolTip": "E:\\do_an_hoan_thanh\\DoAnHMS\\Controllers\\PhieuDatPhongsController.cs",
+              "RelativeToolTip": "Controllers\\PhieuDatPhongsController.cs",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAnwEUAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-09T09:25:28.455Z",
+              "WhenOpened": "2024-09-23T15:56:38.993Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HotelController.cs",
+              "DocumentMoniker": "E:\\do_an_hoan_thanh\\DoAnHMS\\Controllers\\HotelController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HotelController.cs",
+              "ToolTip": "E:\\do_an_hoan_thanh\\DoAnHMS\\Controllers\\HotelController.cs",
+              "RelativeToolTip": "Controllers\\HotelController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-23T15:23:16.041Z",
               "EditorCaption": ""
             }
           ]
